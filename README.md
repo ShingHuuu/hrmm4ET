@@ -27,19 +27,19 @@ This code has been tested with Python 3.8 and the following dependencies:
 - `hrmm/data_utils.py`: Contains data loader and utility functions.
 - `hrmm/constant.py`: Defines paths and constant parameters.
 - `hrmm/scorer.py`: Compute precision, recall, and F1 given an output file.
-- `hrmm/train_*.sh`: bash training command.
-- `hrmm/eval_*.sh`: bash evaluation command.
+- `hrmm/train_*.sh`: Bash training command.
+- `hrmm/eval_*.sh`: Bash evaluation command.
 - `hrmm/adaptive_thre.py`: Defines adaptive threshold.
 
 ## Datasets / Models
 
 This code assumes 3 directories listed below.
 - `./data`: This directory contains original train/dev data files.
-- `./data/ontology`: This directory contains types of vocab files. 
+- `./data/ontology`: This directory contains types ontology of dataset. 
 - `./model`: Trained models will be saved in this directory. 
 
 
-The data files are formatted as jsonlines. Here is an example from Ontonotes:
+The data files are formatted as jsonlines. Here is an example of Ontonotes:
 ```
 {"ex_id": "test_5", "right_context": ["."], "left_context": ["The", "broken", "purchase", "appears", "as", "additional", "evidence", "of", "trouble", "at"], "right_context_text": ".", "left_context_text": "The broken purchase appears as additional evidence of trouble at", "y_category": ["/organization", "/organization/company"], "word": "Imperial Corp. , whose spokesman said the company withdrew its application from the federal Office of Thrift Supervision because of an informal notice that Imperial 's thrift unit failed to meet Community Reinvestment Act requirements", "mention_as_list": ["Imperial", "Corp.", ",", "whose", "spokesman", "said", "the", "company", "withdrew", "its", "application", "from", "the", "federal", "Office", "of", "Thrift", "Supervision", "because", "of", "an", "informal", "notice", "that", "Imperial", "'s", "thrift", "unit", "failed", "to", "meet", "Community", "Reinvestment", "Act", "requirements"]}
 
@@ -62,7 +62,7 @@ The data files are formatted as jsonlines. Here is an example from Ontonotes:
 
 ### Training
 
-`main.py` is the primary script for training and evaluating models. It starts from `hrmm/train_*.sh`.
+`main.py` is the primary script for training and evaluating models. It starts from bash command `hrmm/train_*.sh`.
 
 ```bash
 $ cd hrmm

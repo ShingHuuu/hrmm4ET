@@ -30,6 +30,7 @@ This code has been tested with Python 3.8 and the following dependencies:
 - `hrmm/train_*.sh`: Bash training command.
 - `hrmm/eval_*.sh`: Bash evaluation command.
 - `hrmm/adaptive_thre.py`: Defines adaptive threshold.
+- `hrmm/hrm_wrapper.py`: Defines hrmm model computations in detail.
 
 ## Datasets / Models
 
